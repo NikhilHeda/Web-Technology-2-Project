@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		
+		<script type="application/javascript">
+			
+			// Creating an event stream
+			ev = new EventSource('php/posts_updates.php');
+			
+			ev.addEventListener('newpost', updateContent, false);
+			
+			function updateContent(event) {
+				console.log(event.data);
+			}
+			
+		</script>
+	
+	</head>
+	
+	<body>
+		
+		<!-- POSTS -->
+	
+	</body>
+
+</html>
