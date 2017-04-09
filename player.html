@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap3_player.css" rel="stylesheet">
+		
+		<style type="text/css">
+			.center-block {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+			
+			.text-center {
+				text-align: center;
+				font-size: 2em;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 text-center center-block">Music Player</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8" style="background-color:lavender;">
+					<div id="audio">
+
+						<audio controls
+						data-info-album-title="8874"
+						data-info-artist="Iain Houston and Felix Gibbons"
+						data-info-title="BeBop Aliens"
+						data-info-label="Independent"
+						data-info-year="2005"
+						data-info-att="Music: Iain Houston and Felix Gibbons."
+						data-info-att-link="https://github.com/iainhouston">
+							<source src="http://playerdemo.iainhouston.com/tests/BeBopAliens.ogg" type="audio/ogg" />
+							<source src="http://playerdemo.iainhouston.com/tests/BeBopAliens.mp3" type="audio/mpeg" />
+							<a href="http://playerdemo.iainhouston.com/tests/BeBopAliens.mp3">BeBopAliens</a>
+							An html5-capable browser is required to play this audio. 
+						</audio>
+
+					</div>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> 
+	    <script src="js/bootstrap3_player.js"></script>
+		
+	</body>
+	
+</html>
