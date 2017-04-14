@@ -5,12 +5,17 @@
 		</title>
 		
 		<link rel="stylesheet" href="css/styles.css">
+		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
+		<!-- bootstrap includes -->
 		<link rel = "stylesheet" type = "text/css" href = "bootstrap-3.3.7/bootstrap/css/bootstrap.min.css">
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/bootstrap3_player.css" rel="stylesheet">
+	    <script src="bootstrap-3.3.7/bootstrap/js/bootstrap.js"></script>
+		
 	</head>
 
-	<body style="background-color:beige;">
+	<body style="background-color:beige;" onload="clear_session_song()">
 		<div header="head">
 			<div class="hello navbar navbar-inverse navbar-fixed-top" >
 				<div class="container">
@@ -25,11 +30,11 @@
 					<div class="navbar-collapse collapse" id="searchbar">
 					
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="about.html">About</a></li>
+							<li><a href="#">About</a></li>
 							<li id="userPage">
-								<a href="#@userpage"><i class="icon-user"></i> My Profile</a>
+								<a href="myprofile.html"><i class="icon-user"></i> My Profile</a>
 							</li>
-							<li><a href="#logout" data-prevent="">Logout</a></li>
+							<li><a href="logout.html" data-prevent="">Logout</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#" title="Start a new search">Clear</a></li>
@@ -37,9 +42,10 @@
 
 					<form class="navbar-form">
 							<div class="form-group" style="display:inline;">
-								<div class="input-group" style="display:table;">
-									<span class="input-group-addon" style="width:1%;"><span class="glyphicon glyphicon-search"></span></span>
-									<input class="form-control" name="search" placeholder="Search Here" autocomplete="off" autofocus="autofocus" type="text">
+								<div class="input-group" style="display:table;width: 69%;">
+									
+									<input id="search" class="form-control" name="search" placeholder="Search Here" autocomplete="off" autofocus="autofocus" type="text" onkeyup="obj.getFood()">
+                                    <div id="search_result" style="background-color:white" width="100%" height="100%"></div>
 								</div>
 							</div>
 						</form>
@@ -56,8 +62,7 @@
 					<div class="feeds-single">
 						<div class="user">
 							<div><img class="image img-circle" src="images/Disha-Patani.jpg"></div>
-							<div class="user-name" style = "display:inline-block; margin-right:5%">Disha Patani 
-							</div>
+							<div class="user-name" style = "display:inline-block; margin-right:5%">Disha Patani</div>
 							<div class="action" style="display:inline-block"> is listening to </div>
 							<div class="song" style="display:block;text-align:center"> <h4>Iain Houston and Felix Gibbons ub</h4></div>
 						</div>
@@ -75,7 +80,7 @@
 				<div class=" feeditem">
 					<div class="feeds-single">
 						<div class="user">
-							<div><img class="image img-circle" src="images/Disha-Patani.jpg"></div>
+							<img class="image img-circle" src="images/Disha-Patani.jpg">
 							<div class="user-name" style = "display:inline-block; margin-right:5%">Disha Patani 
 							</div>
 							<div class="action" style="display:inline-block"> is listening to </div>
@@ -104,34 +109,34 @@
 							</thead>
 							<tbody>
 								<tr align="center">
-									<td>John</td>
+									<td id="top1">nil</td>
 								</tr>
 								<tr align="center">
-									<td>Mary</td>
+									<td id="top2">nil</td>
 								</tr>
 								<tr align="center">
-									<td>July</td>
+									<td id="top3">July</td>
 								</tr>
 								<tr align="center">
-									<td>July</td>
+									<td id="top4">July</td>
 								</tr>
 								<tr align="center">
-									<td>July</td>
+									<td id="top5">July</td>
 								</tr>
 								<tr align="center">
-									<td>July</td>
+									<td id="top6">July</td>
 								</tr>
 								<tr align="center">
-									<td>July</td>
+									<td id="to7">July</td>
 								</tr>
 								<tr align="center">
-									<td>July</td>
+									<td id="top8">July</td>
 								</tr>
 								<tr align="center">
-									<td>July</td>
+									<td id="top9">July</td>
 								</tr>
 								<tr align="center">
-									<td>July</td>
+									<td id="top10">July</td>
 								</tr>
 							</tbody>
 					</table>
@@ -178,33 +183,9 @@
 							</tbody>
 					</table>
 				</div>
-
-				<div id="footer">
-					<div id="audio">
-
-						<audio controls
-									data-info-album-title="8874"
-									data-info-artist="Iain Houston and Felix Gibbons"
-									data-info-title="BeBop Aliens"
-									data-info-label="Independent"
-									data-info-year="2005"
-									data-info-att="Music: Iain Houston and Felix Gibbons."
-									data-info-att-link="https://github.com/iainhouston">
-									<source src="http://playerdemo.iainhouston.com/tests/BeBopAliens.ogg" type="audio/ogg" />
-									<source src="http://playerdemo.iainhouston.com/tests/BeBopAliens.mp3" type="audio/mpeg" />
-									<a href="http://playerdemo.iainhouston.com/tests/BeBopAliens.mp3">BeBopAliens</a>
-									An html5-capable browser is required to play this audio. 
-						</audio>
-					
-					</div>
-				</div>
-
 			</div>
 		</div>	
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> 
-	    <script src="js/bootstrap3_player.js"></script>
-	    <script src="bootstrap-3.3.7/bootstrap/js/bootstrap.js"></script>
+	    <script src="js/home.js"></script>
 	</body>
 </html>

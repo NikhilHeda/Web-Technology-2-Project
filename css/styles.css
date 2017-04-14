@@ -28,14 +28,12 @@ body {
 	top: 10%;
 	width: 30%
 }
-.feeds{
-	background-color: #ebebe0;
-	position: absolute;
-	//float: left;
-	left: 30%;
-	width: 40%;
-	height: 100%;
-
+.feeds {
+    background-color: #ebebe0;
+    position: absolute;
+    left: 5%;
+    width: 60%;
+    height: 100%;
 }
 .feeds-single{
 	position: relative;
@@ -45,29 +43,29 @@ body {
 	height: 80px;
 	margin-bottom: 20px;
 }
-#song-list{
-	float: right;
-	width: 30%;
-	height: 70%;
+
+ #song-list {
+    float: right;
+    width: 30%;
+    height: 80%;
 }
 
-#top-songs-all{
-	position: relative;
-	float: left;
-	left: 5%;
-	width: 90%;
-	height: 45%;
-	overflow: scroll;
+#top-songs-all {
+    position: relative;
+    float: left;
+    left: 5%;
+    width: 90%;
+    height: 50%;
+    overflow: scroll;
 }
 
-#top-songs-friends{
-	position: relative;
-	float: left;
-	left: 5%;
-	width: 90%;
-	height: 45%;
-	overflow: scroll;
-	//border: solid;
+#top-songs-friends {
+    position: relative;
+    float: left;
+    left: 5%;
+    width: 90%;
+    height: 50%;
+    overflow: scroll;
 }
 
 .image{
@@ -107,10 +105,11 @@ body {
 	left: 60px;
 	bottom: 10px;
 }
-.user-name{
-	position: relative;
-	left: 20px;
+.user-name {
+    position: relative;
+    left: 5%;
 }
+
 .count{
 	position: relative;
 	left: 40px;
@@ -128,11 +127,12 @@ body {
   bottom: 50px;
 }
 
-.play{
-	position: relative;
-	bottom: 50%;
-	left: 13%;
+.play {
+    position: relative;
+    bottom: 55%;
+    left: 45%;
 }
+
 .ttt{
     max-height: inherit;
     max-width: inherit;
@@ -140,5 +140,10 @@ body {
 .top-song{
 	height: 50%;
 	width: 50%;
+}
+
+.result:hover {
+	background-color: bisque;
+	cursor: pointer;
 }
 

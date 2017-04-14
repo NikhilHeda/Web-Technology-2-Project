@@ -38,10 +38,10 @@ CREATE TABLE songs (
 
 CREATE TABLE feedback (
 	user_id int not null,
-	rating int,
+	subject varchar(50) not null,
 	content varchar(200) not null,
 	
-	primary key (user_id, rating),
+	primary key (user_id, subject),
 	foreign key (user_id) references users(user_id)
 );
 

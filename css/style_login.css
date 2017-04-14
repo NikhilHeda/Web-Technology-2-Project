@@ -19,6 +19,7 @@ body {
 	background: #fff;
 	border-radius: 5px;
 	overflow: hidden;
+
 }
 
 .login:hover > .login-header, .login.focused > .login-header {

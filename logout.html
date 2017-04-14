@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+	
+		<script type="application/javascript">
+			
+			var obj = {
+				xhr: new XMLHttpRequest(),
+				
+				logout: function() {
+					obj.xhr.onreadystatechange = obj.processResponse
+					obj.xhr.open('GET', 'php/logout.php', true)
+					obj.xhr.send(null);
+				},
+				
+				processResponse: function() {
+					if(this.readyState == 4 && this.status == 200) {
+						alert('You have been logged out!')
+						window.location.href = 'index.html';
+					}
+				},
+			}
+			
+		</script>
+		
+	</head>
+	
+	<body onload="obj.logout()">
+		
+		<h3>We are logging you out, please wait.</h3>
+		
+	</body>
+
+</html>

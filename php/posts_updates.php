@@ -10,15 +10,16 @@
 	
 	$query = "
 		SELECT *
-		FROM `listens`
-		ORDER BY `listened_at` DESC;
+		FROM `songs`,`users`
+        WHERE songs.user_id=users.user_id
+		ORDER BY songs.song_id DESC;
 	";
 	
 	$old = 0;
 	if (isset($_SESSION['last_post']))
 		$old = $_SESSION['last_post'];
 	
-	while (True) {
+	while (true) {
 		
 		($query_res = mysql_query($query)) or (die(mysql_error()));
 		
@@ -42,7 +43,5 @@
 		
 		sleep(5);
 	}
-	
-	unset($_SESSION['last_post']);
 
 ?>

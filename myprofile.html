@@ -1,27 +1,34 @@
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
-
-
-
 <!DOCTYPE html>
 <html>
 
 <!-- Head -->
 <head>
 
-<title>Photographer Portfolio a Personal Website Category Flat Bootstrap Responsive Website Template | Home :: W3layouts</title>
+<title>My Profile</title>
 
 <!-- Meta-Tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="keywords" content="Photographer Portfolio a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<meta name="keywords" content="Songs Social Network">
+	
+<script type="application/javascript">
+	addEventListener("load", function() {
+		setTimeout(hideURLbar, 0); 
+	}, false);
+	function hideURLbar(){
+		window.scrollTo(0,1); 
+	} 
+</script>
 <!-- //Meta-Tags -->
 
+	
+<!-- jQuery --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+<!-- Bootstrap-JavaScript --> <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	
 <!-- Custom-Stylesheet-Links -->
 <!-- Bootstrap-CSS -->  <link rel="stylesheet" href="css/bootstrap.min.css" 		 type="text/css" media="all">
 <!-- Insex-Page.CSS --> <link rel="stylesheet" href="css/style-about.css" 			 type="text/css" media="all">
@@ -34,6 +41,8 @@
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700"			   type="text/css" media="all">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" type="text/css" media="all">
 <!-- //Fonts -->
+	
+<link rel="stylesheet" href="css/style-myprofile.css" type="text/css" media="all">
 
 <!-- Supportive-JavaScript -->
 <script src="js/modernizr.js"></script>
@@ -41,8 +50,6 @@
 
 </head>
 <!-- //Head -->
-
-
 
 <!-- Body -->
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="init()">
@@ -61,16 +68,16 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">AudioNet</a>
+						<a class="navbar-brand" href="home.html">AudioNet</a>
 					</div>
 					<div class="navbar-collapse collapse" id="searchbar">
 					
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="about.html">About</a></li>
 							<li id="userPage">
-								<a href="#@userpage"><i class="icon-user"></i> My Profile</a>
+								<a href="#"><i class="icon-user"></i> My Profile</a>
 							</li>
-							<li><a href="#logout" data-prevent="">Logout</a></li>
+							<li><a href="logout.html" data-prevent="">Logout</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#" title="Start a new search">Clear</a></li>
@@ -90,43 +97,13 @@
 			</div>
 		</div>
 
-
-		<!-- Slider -->
-		<div class="w3slideraits">
-			<div class="camera_wrap w3layouts agileits camera_magenta_skin" id="camera_wrap_2">
-				<div data-src="" class="w3layouts agileits profilePic">
-					<div class="camera_caption w3layouts agileits fadeFromBottom">
-						<h3 class="w3layouts agileits">Hello, I am Rachel Weisz.</h3>
-					</div>
-				</div>
-				<div class="w3layouts agileits profilePic" data-src="">
-					<div class="camera_caption w3layouts agileits fadeFromBottom">
-						<h3 class="w3layouts agileits">I am a Photographer</h3>
-					</div>
-				</div>
-				<div data-src="" class="w3layouts agileits profilePic">
-					<div class="camera_caption w3layouts agileits fadeFromBottom">
-						<h3 class="w3layouts agileits">I Photograph Models and Nature</h3>
-					</div>
-				</div>
-				<div class="w3layouts agileits profilePic" data-src="">
-					<div class="camera_caption w3layouts agileits fadeFromBottom">
-						<h3 class="w3layouts agileits">I Love Photography</h3>
-					</div>
-				</div>
-				<div data-src="" class="w3layouts agileits profilePic">
-					<div class="camera_caption w3layouts agileits fadeFromBottom">
-						<h3 class="w3layouts agileits">Check Out My <a class="scroll" href="#portfolio">Portfolio</a> Below</h3>
-					</div>
-				</div>
-			</div>
+        <div id="myProfilePic" style="position:absolute; background:blue; height:100%; width:100%" class="">
+<!--			<img src="" style="width:100%;height:100%">-->
 		</div>
-		<!-- //Slider -->
-
 	</div>
 	<!-- //Header -->
 
-
+        
 
 	<!-- About -->
 	<div class="agileaboutaitsabout" id="agileaboutaitsabout">
@@ -137,41 +114,9 @@
 					<h1>About Me</h1>
                     <div id="about_me">
                     </div>
-					<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">READ MORE<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
 				</div>
 
-				<div class="col-md-6 col-sm-6 agileaboutaits-grid agileaboutaits-image">
-					<div class="agileaboutaits-image-1">
-						<img src="images/about-1.jpg" alt="Couture">
-					</div>
-					<div class="agileaboutaits-image-2">
-						<img src="images/about-2.jpg" alt="Couture">
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="clearfix"></div>
-
-				<!-- Tooltip -->
-				<div class="tooltip-content">
-
-					<div class="modal fade features-modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-						<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-									<h4 class="modal-title">Rachel Weisz</h4>
-								</div>
-								<div class="modal-body">
-									<img src="images/about-1.jpg" alt="Hitech Info">
-									<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<!-- //Tooltip -->
-
+				
 			</div>
 		</div>
 	</div>
@@ -195,10 +140,10 @@
 	<!-- //Speciality -->
 
 	<!-- Progressive-Effects -->
-	<div class="progressive-effects" id="skills">
+	<!-- <div class="progressive-effects" id="skills">
 		<div class="container">
 
-			<!-- Skills -->
+			<!-- Skills --
 			<div id="about-us" class="parallax">
 				<h3>Skills</h3>
 
@@ -229,9 +174,9 @@
 					</div>
 				</div>
 			</div>
-			<!-- //Skills -->
+			<!-- //Skills --
 
-			<!-- Stats -->
+			<!-- Stats --
 			<div class="stats">
 				<h3>Stats</h3>
 
@@ -268,23 +213,104 @@
 				</div>
 
 			</div>
-			<!-- //Stats -->
+			<!-- //Stats --
 
 		</div>
-	</div>
+	</div> -->
 	<!-- //Progressive-Effects -->
 
+	<!--upload-->
+	<div class="upload" style="width:100%;height:100%">
+     
+        <header class="ccheader">
+            <h1>Upload Song</h1>	
+        </header>
+		
+        <div class="wrapper">
+            <form id="upload-form" class="ccform" action="php/upload_song.php" method="post" enctype="multipart/form-data">
+                <div class="ccfield-prepend">
+                    <input id="upload_song_name" class="ccformfield" type="text" placeholder="Song Name" required>
+                </div>
+				<div class="ccfield-prepend">
+                    <input id="upload_song_genre" class="ccformfield" type="text" placeholder="Genre" required>
+                </div>
+				<div class="ccfield-prepend">
+                    <input id="upload_song_duration" class="ccformfield" type="time" placeholder="Duration" required>
+                </div>
+				<div class="ccfield-prepend">
+                    <input id="upload_song_release" class="ccformfield" type="date" placeholder="Release Date" required>
+                </div>
+				<div class="ccfield-prepend">
+                    <input id="upload_song_lang" class="ccformfield" type="text" placeholder="Language" required>
+                </div>
+				<div class="ccfield-prepend">
+                    <input id="upload_song_album" class="ccformfield" type="text" placeholder="Album Name" required>
+                </div>
+				<div class="ccfield-prepend">
+					<label>Song File</label>
+                    <input id="upload_song_url" class="ccformfield" name="song" type="file" placeholder="File" required>
+                </div>
+				<div class="ccfield-prepend">
+					<label>Cover Picture</label>
+                    <input id="upload_song_cover" class="ccformfield" name="cover" type="file" placeholder="File" required>
+                </div>
+                <div class="ccfield-prepend">
+                    <input type="submit" class="ccbtn" style="background: rgb(232, 84, 114);" value="Submit" />
+                </div>
+           </form>
+        </div>
+    </div>
+	<!-- //upload-->
+	
+	<!-- Upload Profile pic -->
+	<div class="profile-pic" style="width:100%;height:100%">
+     
+        <header class="ccheader">
+            <h1>Change Profile Pic</h1>	
+        </header>
+		
+        <div class="wrapper">
+            <form id="upload-propic-form" class="ccform" action="php/upload_pic.php" method="post" enctype="multipart/form-data">
+				<div class="ccfield-prepend">
+					<label>Profile Picture</label>
+                    <input id="upload_profile_pic" class="ccformfield" name="cover" type="file" placeholder="File" required>
+                </div>
+                <div class="ccfield-prepend">
+                    <input type="submit" class="ccbtn" style="background: #c64e4e;" value="Submit" />
+                </div>
+           </form>
+        </div>
+    </div>
+	<!-- //Upload Profile pic -->
+	
+	<!--feedback -->
+    <div class="feedback" style="width:100%;height:100%">
+        
 
-
-
+        <header class="ccheader">
+            <h1>Feedback Form</h1>	
+        </header>
+        <div class="wrapper">
+            <form id="feedback-form" action="php/feedback.php" class="ccform" method="post">
+                <div class="ccfield-prepend">
+                    <input id="feedback-subject" class="ccformfield" type="text" placeholder="Subject" required>
+                </div>
+                <div class="ccfield-prepend">
+                    <textarea id="feedback-message" class="ccformfield" rows="8" placeholder="Message" required></textarea>
+                </div>
+                <div class="ccfield-prepend">
+                    <input type="submit" class="ccbtn" value="Submit" />
+                </div>
+           </form>
+        </div>
+    </div>
+	<!-- //feedback -->
+    
 
 	<!-- Custom-JavaScript-File-Links -->
 
-		<!-- Default-JavaScript -->   <script type="text/javascript" src="js/jquery.min.js"></script>
-		<!-- Bootstrap-JavaScript --> <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
 		<!-- Slider-JavaScript-Files -->
-			<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!--			<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 			<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
 			<script type="text/javascript" src="js/camera.js"></script>
 			<script>
@@ -304,14 +330,15 @@
 		<!-- //Navigation-JavaScript -->
 
 		<!-- Progressive-Effects-Animation-JavaScript -->
-			<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<!--			<script type="text/javascript" src="js/jquery.inview.min.js"></script>
 			<script type="text/javascript" src="js/wow.min.js"></script>
 			<script type="text/javascript" src="js/mousescroll.js"></script>
 			<script type="text/javascript" src="js/main.js"></script>
+-->
 		<!-- //Progressive-Effects-Animation-JavaScript -->
 
 		<!-- Stats-Number-Scroller-Animation-JavaScript -->
-			<script src="js/waypoints.min.js"></script> 
+<!--			<script src="js/waypoints.min.js"></script> 
 			<script src="js/counterup.min.js"></script> 
 			<script>
 				jQuery(document).ready(function( $ ) {
@@ -321,10 +348,11 @@
 					});
 				});
 			</script>
+-->
 		<!-- //Stats-Number-Scroller-Animation-JavaScript -->
 
 		<!-- Gallery-Tab-JavaScript -->
-			<script src="js/cbpFWTabs.js"></script>
+<!--			<script src="js/cbpFWTabs.js"></script>
 			<script>
 				(function() {
 					[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
@@ -335,7 +363,7 @@
 		<!-- //Gallery-Tab-JavaScript -->
 
 		<!-- Swipe-Box-JavaScript -->
-			<script src="js/jquery.swipebox.min.js"></script> 
+<!--			<script src="js/jquery.swipebox.min.js"></script> 
 				<script type="text/javascript">
 					jQuery(function($) {
 						$(".swipebox").swipebox();
@@ -343,28 +371,9 @@
 			</script>
 		<!-- //Swipe-Box-JavaScript -->
 
-		<!-- Map-JavaScript -->
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>        
-			<script type="text/javascript">
-				google.maps.event.addDomListener(window, 'load', init);
-				function init() {
-					var mapOptions = {
-						zoom: 11,
-						center: new google.maps.LatLng(40.6700, -73.9400),
-						styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
-					};
-					var mapElement = document.getElementById('map');
-					var map = new google.maps.Map(mapElement, mapOptions);
-					var marker = new google.maps.Marker({
-						position: new google.maps.LatLng(40.6700, -73.9400),
-						map: map,
-					});
-				}
-			</script>
-		<!-- //Map-JavaScript -->
-
+		<script type="text/javascript" src="js/myprofile.js"></script>
+		
 		<!-- Smooth-Scrolling-JavaScript -->
-            <script type="text/javascript" src="js/myprofile.js"></script>
 			<script type="text/javascript" src="js/move-top.js"></script>
 			<script type="text/javascript" src="js/easing.js"></script>
 			<script type="text/javascript">

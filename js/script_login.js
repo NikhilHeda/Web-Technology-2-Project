@@ -24,7 +24,12 @@ $('#myLogin').on('submit', function(e) {
 		type: "POST",
 		data: "log_username="+name+"&log_passwd="+pswd,
 		success: function(result){
-					alert(result);
+					if (result == 'Success')
+						window.location.href = 'home.html';
+					else {
+						alert(result);
+						$('.logindiv').removeClass('loading').addClass('focused')
+					}
 				}
 	});
 });
@@ -49,9 +54,14 @@ $('#myRegister').on('submit', function(e) {
 		$.ajax({
 			url: "php/register.php",
 			type: "POST",
-			data: "reg_username=" + username + "&reg_passwd=" + pswd + "&reg_email=" + email + "&reg_dob=" + email,
+			data: "reg_username=" + username + "&reg_passwd=" + pswd + "&reg_email=" + email + "&reg_dob=" + dob,
 			success: function(result){
-						alert(result);
+						if (result == 'Success')
+							window.location.href = 'home.html';
+						else {
+							alert(result);
+							$('.registerdiv').removeClass('loading').addClass('focused')
+						}
 					}
 		});
 	} else {
